@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LemaExamen.Resumen">
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+
+                </Grid.RowDefinitions>
+
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Nombre: " Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtnombre" Keyboard="Text" Grid.Row="0" Grid.Column="1"/>
+                <Label x:Name="lbltot" Text="Total a Pagar: " Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtmTotalPagar" Keyboard="Numeric" Grid.Row="1" Grid.Column="1" />
+
+                </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
